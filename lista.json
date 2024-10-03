@@ -1,0 +1,16 @@
+
+{
+  "LUXO": {
+    "descricao": "Cama king, TV, Frigobar, wifi, Ar condicionado",
+    "numero": 101,
+    "preco": 320.00
+
+  },
+  "MASTER": {
+    "descricao": "Cama King size, cama solteiro, TV, Wifi, Frigobar, Ar condicionado",
+    "numero": 102,
+    "preco": 480.00
+  }
+}
+
+
