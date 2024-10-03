@@ -35,6 +35,8 @@ Instalar TKCALENDAR no LINUX: <br>
  2 - sudo apt install python3-pip<br>
  3 - pip install tkcalendar;
 
-● Protocolo da Aplicação: O projeto foi desenvolvido utilizando a biblioteca TKINTER, os comandos não são aplicados no terminal, toda a interação do cliente é feita em uma interface gráfica.;
+● Protocolo da Aplicação: O projeto faz uso de uma interface front-end para a interação do cliente com o servidor, portanto os comandos não são aplicados pelo cliente no terminal.<br>
+verificar_disponibilidade: Verifica se o quarto está disponível nas datas solicitadas, através do quarto escolhido, da data de inicio e da data final de estadia.<br>
+adicionar_reserva: Adiciona uma nova reserva passando o quarto escolhido, data de inicio e data final de estadia.;
 
-● Instruções para execução: Inicialize um terminal e execute "python3 servidor.py" para iniciar o servidor. Em outro terminal execute "python3 cliente.py", dessa maneira será aberta uma interface de front-end para o cliente interagir com o servidor.  
+● Instruções para execução: Deve se trocar o caminho do arquivo nas linhas 56, 61, 72 e 91. Após isso, inicialize o terminal e execute "python3 servidor.py" para iniciar o servidor. Em outro terminal execute "python3 cliente.py", dessa maneira será aberta uma interface de front-end para o cliente interagir com o servidor.  
