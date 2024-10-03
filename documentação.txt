@@ -1,0 +1,11 @@
+O projeto faz uso de uma interface front-end para a interação do cliente com o servidor, portanto os comandos não são aplicados pelo cliente no terminal. 
+
+* verificar_disponibilidade: Verifica se o quarto está disponível nas datas solicitadas, através do quarto escolhido, da data de inicio e da data final de estadia.
+
+* adicionar_reserva: Adiciona uma nova reserva passando o quarto escolhido, data de inicio e data final de estadia.
+
+Código de Status
+* RESERVA-215: "Reserva realizada com sucesso"
+* ERRO-800: "Selecione uma opção de acomodação."
+* ERRO-801: "A data final deve ser posterior à data de início."
+* ERRO-802: "Data não disponível"
