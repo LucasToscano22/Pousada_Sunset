@@ -39,4 +39,4 @@ Instalar TKCALENDAR no LINUX: <br>
 verificar_disponibilidade: Verifica se o quarto está disponível nas datas solicitadas, através do quarto escolhido, da data de inicio e da data final de estadia.<br>
 adicionar_reserva: Adiciona uma nova reserva passando o quarto escolhido, data de inicio e data final de estadia.;
 
-● Instruções para execução: No cliente.py deve se trocar o caminho do arquivo nas linhas 56, 61, 72 e 91, o caminho deve ser a pasta onde se localiza todos os arquivos do projeto. Após isso, inicialize o terminal e execute "python3 servidor.py" para iniciar o servidor. Em outro terminal execute "python3 cliente.py", dessa maneira será aberta uma interface de front-end para o cliente interagir com o servidor.  
+● Instruções para execução: No cliente.py deve se trocar o caminho do arquivo nas linhas 59, 64, 75, 94, o caminho deve ser a pasta onde se localiza todos os arquivos do projeto. Após isso, inicialize o terminal e execute "python3 servidor.py" para iniciar o servidor. Em outro terminal execute "python3 cliente.py", dessa maneira será aberta uma interface de front-end para o cliente interagir com o servidor.  
