@@ -37,7 +37,9 @@ def enviar_mensagem():
         'pagamento': pagamento,
         'quarto': quarto,
         'data_inicio': data_inicio,
-        'data_fim': data_fim
+        'data_fim': data_fim,
+        'ERRO-802': 'Data não disponível',
+        'RESERVA-215': 'Reserva realizada com sucesso'
     }
 
 
@@ -50,20 +52,15 @@ def enviar_mensagem():
     cliente_nome.delete(0, tk.END)
     cliente_email.delete(0, tk.END)
     
- # Obter o caminho da variável de ambiente
-base_dir = os.getenv('BASE_DIR', '/home/leidiana/Documentos/pousada')  # Caminho padrão se a variável não estiver definida
 
-# Construir o caminho completo do arquivo usando a variável de ambiente
-arquivo_json = os.path.join(base_dir, 'lista.json')
-arquivo2_json = os.path.join(base_dir, 'pagamento.json')
-
-# Abrir o arquivo usando o caminho dinâmico
-with open(arquivo_json, 'r') as rel_quartos:
+with open( '/home/leidiana/Documentos/pousada/lista.json','r') as rel_quartos:
     dic_quartos = json.load(rel_quartos)
+
 quartos = list(dic_quartos.keys())
 
-with open(arquivo2_json, 'r') as met_pagamento:
+with open('/home/leidiana/Documentos/pousada/pagamento.json', 'r') as met_pagamento:
     dic_pagamento = json.load(met_pagamento)
+
 metodos_pagamento = list(dic_pagamento.keys())
 
 def buscar_informacao():
@@ -72,7 +69,7 @@ def buscar_informacao():
     if acomodacoes == '':
         label_descricao['text'] = message_info['ERR0-800']
     else:
-        with open(arquivo_json, 'r') as acomodacao:
+        with open('/home/leidiana/Documentos/pousada/lista.json', 'r') as acomodacao:
             room = json.load(acomodacao)
             info_room = room[acomodacoes]['descricao']
             label_descricao['text'] = f'O quarto possui: \n {info_room}'
@@ -91,7 +88,7 @@ def total_pagar():
     if quarto == '':
         label_valor['text'] = message_info['ERR0-800']
 
-    with open (arquivo_json, 'r') as valor:
+    with open ('/home/leidiana/Documentos/pousada/lista.json','r') as valor:
      valor1 = json.load(valor)
      valor_total = diferenca_dias * valor1[quarto]['preco']
 
